@@ -28,4 +28,4 @@ jobs:
     - name: Test with Pytest
       run: pytest test-folder
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag jupyter-server:$(date +%s)
+      run: docker build . --file test-folder/Dockerfile --tag jupyter-server:$(date +%s)
